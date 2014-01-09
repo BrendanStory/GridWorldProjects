@@ -46,12 +46,16 @@ public class BoxBug extends Bug
         {
             move();
             steps++;
+
         }
         else
         {
             turn();
             turn();
             steps = 0;
+            sideLength++;
         }
     }
 }
+
+
