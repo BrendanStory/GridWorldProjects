@@ -14,9 +14,7 @@ public class SpiralBug extends Bug
 
     public void act()
     {
-    	turn();
-    	turn();
-    	
+ 
         if (steps < sideLength && canMove())
         {
             move();

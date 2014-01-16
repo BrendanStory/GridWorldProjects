@@ -53,7 +53,6 @@ public class BoxBug extends Bug
             turn();
             turn();
             steps = 0;
-            sideLength++;
         }
     }
 }
