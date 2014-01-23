@@ -1,0 +1,53 @@
+JumperBug Questions
+
+Set 3
+	1. loc1.getRow();
+	2. False
+	3. (3, 5);
+	4. 135
+	5. You tell it the direction of which to find the adjacent location
+
+Set 4
+	1. ArrayList<Location> getOccupiedLocations(); ArrayList<Location> getEmptyLocations();
+	2. boolean isValid(Location (10,10));
+	3. The method declarations are found in the bug code which tells all the actors what to do.
+	4. No, since you add actors around the grid and don't want to have to edit your code whenever you add a new actor
+
+Set 5
+	1. Direction, Color, and Location
+	2. NORTH, and Color depends on the actor. Rocks spawn black, bugs spawn red, and flowers spawn based on the color of the bug that placed them.
+	3. So parameters could be implemented.
+	4. An actor can only appear once in a grid, and once removed, a second remove command will have no effect as the location of the actor has already been changed to null. However, you can add an actor, remove it, and then add it again.
+	5. Run the turn command twice.
+
+Set 6
+	1. if(!gr.isValid(next)) return false;
+	2. return (neighbor == null) || (neighbor instanceof Flower);
+	3. getGrid(), which is used to recall locations on the grid and find out if other locations are on the grid or not.
+	4. getLocation(), which is used t find where actors are in the grid and where they are going depending on the getDirection command.
+	5. neighbor, which can be used to find what grid locations are in adjacent grid squares.
+	6. the canMove command returns false
+	7. It is needed in order to put the data into the correct format for running the 'next' command.
+	8. Because the flower method pulls the color from the bug when it is run.
+	9. No, because it is a section of the move command that places a flower
+	10. Flower flower = new Flower(getColor());                                flower.putSelfInGrid(gr, loc);
+	11. Four times
+
+Group Activity
+	1. 
+		A. It turns if the space two cells ahead of it is a rock or a flower.
+		B. It turns if the space two spots in front of it is an invalid location
+		C. It turns and continues the movement in the next direction it can.
+		D. Move foward 2 spaces.
+		E. It will jump over it.
+		F. It needs to test if there is a flower infront of it directly.
+	2.
+		A. Bug
+		B. The closest other class is Bug
+		C. We need a constructor but no parameters should be placed on it
+		D. The move method needs to be changed so that it moves twice instead of once
+		E. The 'Jump' method
+		F. Set up multiple different variations in the grid before hitting the act button.
+
+
+
