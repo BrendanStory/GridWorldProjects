@@ -18,7 +18,6 @@ public class Jumper extends Bug{
 	}
 
 	public void act(){
-		getLocation();
 		jump();
 		
 		
@@ -33,6 +32,7 @@ public class Jumper extends Bug{
 
 		Location location = getLocation();
 
+			//Finds the locations of each of the two spaces in front of it
 		Location location1 = location.getAdjacentLocation(direction);
 		Location location2 = location1.getAdjacentLocation(direction);
 
